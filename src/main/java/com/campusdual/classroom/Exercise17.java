@@ -8,13 +8,9 @@ public class Exercise17 {
 
 	public static String[] createInitializedStringArray() {
 		String[] array2 = new String[3];
-		int n = 1;
-		int n1 = 2;
-		int n2 = 3;
-		array2[0] = String.valueOf(n);
-		array2[1] = String.valueOf(n1);
-		array2[2] = String.valueOf(n2);
-
+		for (int i = 0; i < array2.length; i++) {
+			array2[i] = String.valueOf(i+1);
+		}
 		return array2;
 	}
 
